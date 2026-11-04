@@ -1,5 +1,6 @@
 import PromptSync from "prompt-sync";
 import adicionarContato from "./adicionar_contatos.js";
+import atualizarContato from "./atualizar_contatos.js";
 import contatos from "./contatos.js";
 import removerContatos from "./excluir_contatos.js";
 import listarContatos from "./listar_contatos.js";
@@ -32,7 +33,7 @@ do {
             });
             break;
         case 3:
-            atualizarContatos(contatos, parseInt(`Informe o ID do contato que gostaria de editar`${id}));
+            atualizarContato(contatos, parseInt(`Informe o ID do contato que gostaria de editar: `));
             break;
         case 4:
             removerContatos();
